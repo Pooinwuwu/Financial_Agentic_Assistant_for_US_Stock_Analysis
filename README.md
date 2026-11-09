@@ -75,3 +75,14 @@ The application tracks a portfolio of 10 premier United States equities:
                       |   Final Answer + Citations  |
                       +-----------------------------+
 
+🛠️ Core Capabilities
+1. 📊 Text-to-SQL Execution (run_sql)
+Query historical financial statement data (financials, companies, daily_prices).
+Automatic metadata validation and Read-Only connection protection.
+2. 🔍 SEC 10-K Vector RAG (sec_doc_rag)
+Dense semantic retrieval using bge-m3 embeddings.
+Metadata pre-filtering by symbol, year, and section (Item 1A Risk Factors & Item 7 MD&A).
+Automatic citation enforcement: [SYMBOL 10-K (YEAR) SECTION].
+3. 🧮 Sandboxed Python Calculation (run_python_calc)
+Dynamic code generation for statistical calculations (Mean, Volatility, Growth Rate).
+Self-correction retry loop fed by execution tracebacks.
