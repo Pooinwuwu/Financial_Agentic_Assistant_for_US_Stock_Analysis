@@ -63,3 +63,15 @@ The application tracks 10 US equities:
                          |    Observe & Synthesize     |
                          |  Final Answer + Citations   |
                          +-----------------------------+
+Core Capabilities
+Text-to-SQL (run_sql)
+- Queries historical financial statement data in financials, companies, and daily_prices tables.
+- Validates metadata automatically.
+- Uses a read-only database connection.
+SEC 10-K Vector RAG (sec_doc_rag)
+- Retrieves semantically relevant passages using bge-m3 embeddings.
+- Supports metadata filtering by symbol, year, and section, including Item 1A (Risk Factors) and Item 7 (MD&A).
+- Enforces citations in the format [SYMBOL 10-K (YEAR) SECTION].
+Sandboxed Python Calculation (run_python_calc)
+- Generates code for statistical calculations such as mean, volatility, and growth rate.
+- Retries after errors using execution tracebacks for self-correction.
