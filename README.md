@@ -78,7 +78,7 @@ The application tracks a portfolio of 10 premier United States equities:
                       |   Final Answer + Citations  |
                       +-----------------------------+
 
----
+```
 
 ## 🛠️ Core Capabilities
 1. 📊 Text-to-SQL Execution (run_sql)
