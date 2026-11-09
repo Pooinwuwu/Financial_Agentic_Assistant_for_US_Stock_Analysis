@@ -77,6 +77,9 @@ The application tracks a portfolio of 10 premier United States equities:
                       |    Observe & Synthesize     |
                       |   Final Answer + Citations  |
                       +-----------------------------+
+
+---
+
 ## 🛠️ Core Capabilities
 1. 📊 Text-to-SQL Execution (run_sql)
 Query historical financial statement data (financials, companies, daily_prices).
